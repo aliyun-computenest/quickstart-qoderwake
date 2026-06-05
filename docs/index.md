@@ -23,7 +23,7 @@ Agent "做完即忘" 的问题。
 
 ## 💡使用示例
 
-1. 通过 TUI 登录 Qoder，在终端中启动 QoderCli
+1. 通过 TUI 登录 Qoder，在终端中启动 qodercli ：
    ```bash
    sudo su
    cd /root
@@ -37,7 +37,7 @@ Agent "做完即忘" 的问题。
 
 3. 复制完整链接在浏览器打开并批准登录。
 
-4. 登录完成后，Ctrl+C 退出 qodercli，然后执行 qoderwake 命令查看登录结果：
+4. 登录完成后，Ctrl+C 退出 qodercli，然后执行 qoderwake 命令：
    ```bash
    qoderwake whoami
    ```
