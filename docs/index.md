@@ -37,10 +37,18 @@ Agent "做完即忘" 的问题。
 
 3. 复制完整链接在浏览器打开并批准登录。
 
-4. 登录完成后，Ctrl+C 退出 qodercli，然后执行 qoderwake 命令：
+4. 登录完成后，Ctrl+C 退出 qodercli，然后执行 qoderwake 命令启动服务：
    ```bash
-   qoderwake whoami
+   qoderwake start
+   nohup socat TCP-LISTEN:19821,fork,reuseaddr TCP:127.0.0.1:19820 >/dev/null 2>&1 &
    ```
+
+5. 服务启动后，可以通过安全代理访问 WebUi。
+   
+   ![image.png](10.jpg)
+   
+   ![image.png](9.jpg)
+
 
 ## 📚 使用指南
 
