@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计算巢是阿里云开放给企业应用服务商的服务管理平台。服务商能够在计算巢上发布私有化部署服务，为其客户提供云上软件一键部署的能力；同时也支持全托管模式的服务，赋能服务商托管其客户资源。">
+  <title>Home - Aliyun 计算巢 x Demo</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+
+  
+
+  
+  
+
+  
+    <script src="search/main.js"></script>
+  
+
+  
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="./img/logo-2x.png">
+        </div>
+        <div class="nav-list">
+          <ul>
+          
+              <li><a href="#_1">🌟 服务简介</a></li>
+              
+          
+              <li><a href="#_2">🚀 部署流程</a></li>
+              
+          
+              <li><a href="#_3">💡使用示例</a></li>
+              
+          
+              <li><a href="#_4">📚 使用指南</a></li>
+              
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content theme-github">
+      
+      <div class="content-inner">        
+        
+        <h2 id="_1">🌟 服务简介</h2>
+<blockquote>
+<p>💥 <strong>告别"做完即忘"，让数字员工成为你 7×24 小时在岗的超级同事！</strong><br />
+QoderWake 不只是 Agent 工具——它是有身份、有记忆、有红线的生产级数字员工，自主执行、自动复盘、越用越准，让团队整体产出真正提速！</p>
+</blockquote>
+<p>QoderWake 是阿里巴巴推出的业界首个安全可控、持续进化的生产级数字员工产品，能在真实工作中承担软件工程师、运营、分析师等岗位角色。它采用创新的
+Harness-First 架构，每次执行后会把经验沉淀到记忆、技能、策略、验证规则和工作流五个维度，并基于内置的防腐机制（Anti-Rot Governance）持续淘汰过时经验、合并冲突、撤回失效策略，从根本上解决通用
+Agent "做完即忘" 的问题。</p>
+<h2 id="_2">🚀 部署流程</h2>
+<ol>
+<li>
+<p>访问计算巢 QoderWake
+   社区版 <a href="https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&amp;ServiceId=service-a4510bdaf9594373b966">部署链接</a>
+   ，按页面提示填写部署参数：<br />
+<img alt="image.png" src="1.jpg" /></p>
+</li>
+<li>
+<p>参数配置完成后，系统将自动生成<strong>费用预估明细</strong>。确认资源配置无误后，点击 <strong>下一步：确认订单</strong>。</p>
+</li>
+<li>
+<p>在订单确认页，确认后点击 <strong>立即创建</strong> 开始部署。</p>
+</li>
+<li>
+<p>部署完成后，通过控制台远程连接ECS。
+   <img alt="image.png" src="img_4.jpg" /></p>
+</li>
+</ol>
+<h2 id="_3">💡使用示例</h2>
+<ol>
+<li>
+<p>通过 TUI 登录 Qoder，在终端中启动 qodercli ：
+   <code>bash
+   sudo su
+   cd /root
+   source /root/.profile
+   qodercli</code></p>
+</li>
+<li>
+<p>在交互式界面完成授权，然后选择 Login with Qoder Platform (Browser) ：</p>
+</li>
+</ol>
+<p><img alt="image.png" src="img_7.jpg" /></p>
+<ol>
+<li>
+<p>复制完整链接在浏览器打开并批准登录。</p>
+</li>
+<li>
+<p>登录完成后，Ctrl+C 退出 qodercli，然后执行 qoderwake 命令启动服务：
+   <code>bash
+   qoderwake start --host 0.0.0.0
+   nohup socat TCP-LISTEN:19821,fork,reuseaddr TCP:127.0.0.1:19820 &gt;/dev/null 2&gt;&amp;1 &amp;</code></p>
+</li>
+<li>
+<p>服务启动后，可以通过安全代理访问 WebUi。</p>
+</li>
+</ol>
+<p><img alt="image.png" src="10.jpg" /></p>
+<p><img alt="image.png" src="9.jpg" /></p>
+<h2 id="_4">📚 使用指南</h2>
+<p>使用请参考 QoderWake <a href="https://qoder.com/qoderwake">官方文档</a> 了解完整能力与数字员工岗位列表。</p>
+        
+      </div>
+
+      <div class="copyrights">© 2009-2022 Aliyun.com 版权所有</div>
+    </div>
+  </div>
+  
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-08-17 03:30:50.754404+00:00
+  -->
+</body>
+</html>
