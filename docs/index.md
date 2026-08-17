@@ -39,7 +39,7 @@ Agent "做完即忘" 的问题。
 
 4. 登录完成后，Ctrl+C 退出 qodercli，然后执行 qoderwake 命令启动服务：
    ```bash
-   qoderwake start
+   qoderwake start --host 0.0.0.0
    nohup socat TCP-LISTEN:19821,fork,reuseaddr TCP:127.0.0.1:19820 >/dev/null 2>&1 &
    ```
 
